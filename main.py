@@ -2,10 +2,12 @@ def main():
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
     print(text)
+    num_words = word_count(text)
+    print(f"Word Count: {num_words}")
 
 def word_count(text):
     words = text.split()
-    print("Word Count:", len(words))
+    return len(words)
     
 
 def get_book_text(path):
